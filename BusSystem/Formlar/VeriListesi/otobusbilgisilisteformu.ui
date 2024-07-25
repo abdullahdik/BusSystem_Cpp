@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>OtobusBilgisiListeFormu</class>
+ <widget class="QWidget" name="OtobusBilgisiListeFormu">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>507</width>
+    <height>423</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Otobus Sistemi</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="../../Kaynaklar.qrc">
+    <normaloff>:/Resimler/Resimler/otobus.png</normaloff>:/Resimler/Resimler/otobus.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(255, 255, 255);</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <widget class="QGroupBox" name="grpAlanSecimi">
+     <property name="title">
+      <string>Alan Seçimi</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QRadioButton" name="rbPlaka">
+        <property name="text">
+         <string>Plaka</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="rbKoltukSayisi">
+        <property name="text">
+         <string>Koltuk Sayısı</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="rbRuhsat">
+        <property name="text">
+         <string>Ruhsat</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="rbRenk">
+        <property name="text">
+         <string>Renk</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="rbMuayeneTarihi">
+        <property name="text">
+         <string>Muayene Tarihi</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="rbTumu">
+        <property name="text">
+         <string>Tümü</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="0" column="1">
+    <widget class="QGroupBox" name="grpAramaTuru">
+     <property name="title">
+      <string>Arama Türü</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <widget class="QRadioButton" name="rbIleBaslayan">
+        <property name="text">
+         <string>İle Başlayan</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="rbIleBiten">
+        <property name="text">
+         <string>İle Biten</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="rbIceren">
+        <property name="text">
+         <string>İçeren</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="0" column="2">
+    <widget class="QGroupBox" name="grpAramaMetni">
+     <property name="title">
+      <string>Arama Metni</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_3">
+      <item row="0" column="0">
+       <widget class="QLineEdit" name="leArama"/>
+      </item>
+      <item row="0" column="1">
+       <widget class="QPushButton" name="pbArama">
+        <property name="text">
+         <string>Arama</string>
+        </property>
+        <property name="icon">
+         <iconset resource="../../Kaynaklar.qrc">
+          <normaloff>:/Resimler/Resimler/buyutec.png</normaloff>:/Resimler/Resimler/buyutec.png</iconset>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="1" column="0" colspan="3">
+    <widget class="QTableWidget" name="tblOtobusBilgisiListesi"/>
+   </item>
+   <item row="2" column="0" colspan="3">
+    <spacer name="verticalSpacer">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>40</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+  </layout>
+ </widget>
+ <tabstops>
+  <tabstop>rbPlaka</tabstop>
+  <tabstop>rbKoltukSayisi</tabstop>
+  <tabstop>rbRuhsat</tabstop>
+  <tabstop>rbRenk</tabstop>
+  <tabstop>rbMuayeneTarihi</tabstop>
+  <tabstop>rbTumu</tabstop>
+  <tabstop>rbIleBaslayan</tabstop>
+  <tabstop>rbIleBiten</tabstop>
+  <tabstop>rbIceren</tabstop>
+  <tabstop>leArama</tabstop>
+  <tabstop>pbArama</tabstop>
+  <tabstop>tblOtobusBilgisiListesi</tabstop>
+ </tabstops>
+ <resources>
+  <include location="../../Kaynaklar.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>leArama</sender>
+   <signal>textChanged(QString)</signal>
+   <receiver>pbArama</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>372</x>
+     <y>189</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>396</x>
+     <y>189</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>IsletmeBilgisiListeFormu</class>
+ <widget class="QWidget" name="IsletmeBilgisiListeFormu">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>607</width>
+    <height>349</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>İşletme Listesi</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="../../Kaynaklar.qrc">
+    <normaloff>:/Resimler/Resimler/isletme.png</normaloff>:/Resimler/Resimler/isletme.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(255, 255, 255);</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_2">
+   <item row="0" column="0">
+    <widget class="QGroupBox" name="grpArama">
+     <property name="title">
+      <string>Alan Seçimi</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <widget class="QRadioButton" name="rbIsletmeAdi">
+        <property name="text">
+         <string>İşletme Adı</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="rbSicilNo">
+        <property name="text">
+         <string>Sicil No</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="rbVergiNo">
+        <property name="text">
+         <string>Vergi No</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="rbKonum">
+        <property name="text">
+         <string>Konum</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="rbTumu">
+        <property name="text">
+         <string>Tümü</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="0" column="1">
+    <widget class="QGroupBox" name="grpArama_3">
+     <property name="title">
+      <string>Arama Türü</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_3">
+      <item>
+       <widget class="QRadioButton" name="rbIleBaslayan">
+        <property name="text">
+         <string>İle Baslayan</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="rbIleBiten">
+        <property name="text">
+         <string>İle Biten</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="rbIceren">
+        <property name="text">
+         <string>İçeren</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="0" column="2">
+    <widget class="QGroupBox" name="grpArama_2">
+     <property name="title">
+      <string>Kriter</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="0" column="0">
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+         <widget class="QLabel" name="label">
+          <property name="text">
+           <string>AramaMetni</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="leArama"/>
+        </item>
+       </layout>
+      </item>
+      <item row="1" column="0">
+       <widget class="QPushButton" name="pbArama">
+        <property name="text">
+         <string>Ara</string>
+        </property>
+        <property name="icon">
+         <iconset resource="../../Kaynaklar.qrc">
+          <normaloff>:/Resimler/Resimler/buyutec.png</normaloff>:/Resimler/Resimler/buyutec.png</iconset>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="1" column="0" colspan="3">
+    <widget class="QTableWidget" name="tblIsletmeBilgisiListesi"/>
+   </item>
+   <item row="2" column="1">
+    <spacer name="verticalSpacer">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>40</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+  </layout>
+ </widget>
+ <tabstops>
+  <tabstop>rbTumu</tabstop>
+  <tabstop>rbIceren</tabstop>
+  <tabstop>leArama</tabstop>
+  <tabstop>pbArama</tabstop>
+  <tabstop>tblIsletmeBilgisiListesi</tabstop>
+ </tabstops>
+ <resources>
+  <include location="../../Kaynaklar.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>leArama</sender>
+   <signal>textChanged(QString)</signal>
+   <receiver>pbArama</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>297</x>
+     <y>186</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>309</x>
+     <y>190</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

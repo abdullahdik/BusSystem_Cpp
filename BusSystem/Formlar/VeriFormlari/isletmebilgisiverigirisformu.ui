@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>IsletmeBilgisiVeriGirisFormu</class>
+ <widget class="QWidget" name="IsletmeBilgisiVeriGirisFormu">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>222</width>
+    <height>185</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>İşletme Bilgisi</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="../../Kaynaklar.qrc">
+    <normaloff>:/Resimler/Resimler/isletme.png</normaloff>:/Resimler/Resimler/isletme.png</iconset>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_2">
+   <item row="0" column="0">
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="0" column="0">
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QLabel" name="lbIcon">
+         <property name="text">
+          <string/>
+         </property>
+         <property name="pixmap">
+          <pixmap resource="../../Kaynaklar.qrc">:/Resimler/Resimler/isletme.png</pixmap>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="lbIsletmeSistemi">
+         <property name="text">
+          <string>İşletme Bilgisi</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item row="1" column="0">
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <item>
+        <layout class="QFormLayout" name="formLayout">
+         <item row="0" column="0">
+          <widget class="QLabel" name="lbIsletmeAdi">
+           <property name="text">
+            <string>İşletme Adı</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QLineEdit" name="leIsletmeAdi"/>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="lbSicilNo">
+           <property name="text">
+            <string>Sicil No</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QSpinBox" name="spnSicilNo"/>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLabel" name="lbVergiNo">
+           <property name="text">
+            <string>Vergi No</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QLineEdit" name="leVergiNo"/>
+         </item>
+         <item row="3" column="0">
+          <widget class="QLabel" name="lbKonum">
+           <property name="text">
+            <string>Konum</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="1">
+          <widget class="QLineEdit" name="leKonum"/>
+         </item>
+         <item row="4" column="0">
+          <spacer name="verticalSpacer_2">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>40</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item row="4" column="1">
+          <spacer name="verticalSpacer_3">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>40</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QFormLayout" name="formLayout_2">
+         <item row="0" column="0">
+          <widget class="QPushButton" name="pbKaydet">
+           <property name="text">
+            <string>Kaydet</string>
+           </property>
+           <property name="icon">
+            <iconset resource="../../Kaynaklar.qrc">
+             <normaloff>:/Resimler/Resimler/kaydet.png</normaloff>:/Resimler/Resimler/kaydet.png</iconset>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QPushButton" name="pbIptal">
+           <property name="text">
+            <string>İptal</string>
+           </property>
+           <property name="icon">
+            <iconset resource="../../Kaynaklar.qrc">
+             <normaloff>:/Resimler/Resimler/iptal.png</normaloff>:/Resimler/Resimler/iptal.png</iconset>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <spacer name="verticalSpacer">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>40</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <tabstops>
+  <tabstop>leIsletmeAdi</tabstop>
+  <tabstop>spnSicilNo</tabstop>
+  <tabstop>leVergiNo</tabstop>
+  <tabstop>leKonum</tabstop>
+  <tabstop>pbKaydet</tabstop>
+  <tabstop>pbIptal</tabstop>
+ </tabstops>
+ <resources>
+  <include location="../../Kaynaklar.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>pbIptal</sender>
+   <signal>clicked()</signal>
+   <receiver>IsletmeBilgisiVeriGirisFormu</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>205</x>
+     <y>99</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>250</x>
+     <y>155</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

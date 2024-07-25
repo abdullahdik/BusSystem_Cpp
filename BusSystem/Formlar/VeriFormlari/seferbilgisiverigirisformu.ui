@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>seferbilgisiverigirisformu</class>
+ <widget class="QWidget" name="seferbilgisiverigirisformu">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>307</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Sefer Bilgisi</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="../../Kaynaklar.qrc">
+    <normaloff>:/Resimler/Resimler/sefer.png</normaloff>:/Resimler/Resimler/sefer.png</iconset>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <layout class="QFormLayout" name="formLayout_2">
+     <item row="0" column="0">
+      <widget class="QLabel" name="lblIcon">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap resource="../../Kaynaklar.qrc">:/Resimler/Resimler/sefer.png</pixmap>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QLabel" name="lblSeferBilgisi">
+       <property name="text">
+        <string>Sefer Bilgisi</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0" colspan="2">
+      <widget class="Line" name="line">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0" colspan="2">
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <layout class="QFormLayout" name="formLayout">
+         <item row="0" column="0">
+          <widget class="QLabel" name="lblBaslangicSaati">
+           <property name="text">
+            <string>Başlangıç Saati</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QDateTimeEdit" name="dteBaslangicSaati"/>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="lbBtisSaati">
+           <property name="text">
+            <string>Bitiş Saati</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QDateTimeEdit" name="dteBitisSaati"/>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLabel" name="lblSeferNo">
+           <property name="text">
+            <string>Sefer No</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QSpinBox" name="spnSeferNo"/>
+         </item>
+         <item row="3" column="0">
+          <widget class="QLabel" name="lblHatlar">
+           <property name="text">
+            <string>Hatlar</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="1">
+          <widget class="QPlainTextEdit" name="pteHatlar"/>
+         </item>
+         <item row="4" column="0">
+          <widget class="QLabel" name="lblTarife">
+           <property name="text">
+            <string>Tarife</string>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="1">
+          <widget class="QLineEdit" name="leTarife"/>
+         </item>
+         <item row="5" column="0">
+          <widget class="QLabel" name="lblSeferKodu">
+           <property name="text">
+            <string>Sefer Kodu</string>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="1">
+          <widget class="QLineEdit" name="leSeferKodu"/>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout">
+         <item>
+          <widget class="QPushButton" name="pbKaydet">
+           <property name="text">
+            <string>Kaydet</string>
+           </property>
+           <property name="icon">
+            <iconset resource="../../Kaynaklar.qrc">
+             <normaloff>:/Resimler/Resimler/kaydet.png</normaloff>:/Resimler/Resimler/kaydet.png</iconset>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pbIptal">
+           <property name="text">
+            <string>İptal</string>
+           </property>
+           <property name="icon">
+            <iconset resource="../../Kaynaklar.qrc">
+             <normaloff>:/Resimler/Resimler/iptal.png</normaloff>:/Resimler/Resimler/iptal.png</iconset>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="verticalSpacer">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>40</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </item>
+     <item row="3" column="0">
+      <spacer name="verticalSpacer_2">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>40</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <tabstops>
+  <tabstop>dteBaslangicSaati</tabstop>
+  <tabstop>dteBitisSaati</tabstop>
+  <tabstop>spnSeferNo</tabstop>
+  <tabstop>pteHatlar</tabstop>
+  <tabstop>leTarife</tabstop>
+  <tabstop>leSeferKodu</tabstop>
+  <tabstop>pbKaydet</tabstop>
+  <tabstop>pbIptal</tabstop>
+ </tabstops>
+ <resources>
+  <include location="../../Kaynaklar.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>pbIptal</sender>
+   <signal>clicked()</signal>
+   <receiver>seferbilgisiverigirisformu</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>460</x>
+     <y>101</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>486</x>
+     <y>350</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

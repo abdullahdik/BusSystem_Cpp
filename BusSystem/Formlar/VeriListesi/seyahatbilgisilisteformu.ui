@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SeyahatBilgisiListeFormu</class>
+ <widget class="QWidget" name="SeyahatBilgisiListeFormu">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>450</width>
+    <height>373</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Seyahat Listesi</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="../../Kaynaklar.qrc">
+    <normaloff>:/Resimler/Resimler/seyahat.png</normaloff>:/Resimler/Resimler/seyahat.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(255, 255, 255);</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="1">
+    <widget class="QGroupBox" name="grpAramaTuru">
+     <property name="title">
+      <string>Arama Türü</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QRadioButton" name="rbIleBaslayan">
+        <property name="text">
+         <string>İle Başlayan</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="rbIleBiten">
+        <property name="text">
+         <string>İle Biten</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="rbIceren">
+        <property name="text">
+         <string>İçeren</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="rbTumu_2">
+        <property name="text">
+         <string>Tümü</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="2" column="1">
+    <spacer name="verticalSpacer">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>40</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="0" column="0">
+    <widget class="QGroupBox" name="grpAlanSecimi">
+     <property name="title">
+      <string>Alan Seçimi</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <widget class="QRadioButton" name="rbPeronNo">
+        <property name="text">
+         <string>Peron No</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="rbTarihSaat">
+        <property name="text">
+         <string>Tarih/Saat</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="rbIkram">
+        <property name="text">
+         <string>İkram</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="rbTesis">
+        <property name="text">
+         <string>Tesis</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="rbTumu">
+        <property name="text">
+         <string>Tümü</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="1" column="0" colspan="4">
+    <widget class="QTableWidget" name="tblSeyahatBlgisiListesi"/>
+   </item>
+   <item row="0" column="2">
+    <widget class="QGroupBox" name="grpAramaMetni">
+     <property name="title">
+      <string>Arama Metni</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_3">
+      <item>
+       <widget class="QLineEdit" name="leAramaMetni"/>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pbKaydet">
+        <property name="text">
+         <string>Kaydet</string>
+        </property>
+        <property name="icon">
+         <iconset resource="../../Kaynaklar.qrc">
+          <normaloff>:/Resimler/Resimler/buyutec.png</normaloff>:/Resimler/Resimler/buyutec.png</iconset>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <tabstops>
+  <tabstop>rbPeronNo</tabstop>
+  <tabstop>rbIkram</tabstop>
+  <tabstop>rbTesis</tabstop>
+  <tabstop>rbIceren</tabstop>
+  <tabstop>rbTumu_2</tabstop>
+  <tabstop>pbKaydet</tabstop>
+  <tabstop>tblSeyahatBlgisiListesi</tabstop>
+ </tabstops>
+ <resources>
+  <include location="../../Kaynaklar.qrc"/>
+ </resources>
+ <connections/>
+</ui>

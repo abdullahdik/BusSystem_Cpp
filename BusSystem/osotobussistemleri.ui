@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>OSOtobusSistemleri</class>
+ <widget class="QMainWindow" name="OSOtobusSistemleri">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>721</width>
+    <height>579</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>417</width>
+    <height>363</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>OSOtobusSistemleri</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="Kaynaklar.qrc">
+    <normaloff>:/Resimler/Resimler/otobus.png</normaloff>:/Resimler/Resimler/otobus.png</iconset>
+  </property>
+  <property name="windowOpacity">
+   <double>1.000000000000000</double>
+  </property>
+  <property name="toolTipDuration">
+   <number>-1</number>
+  </property>
+  <property name="layoutDirection">
+   <enum>Qt::LeftToRight</enum>
+  </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-image: url(:/Resimler/Resimler/kamilkoc.jpg);</string>
+  </property>
+  <property name="toolButtonStyle">
+   <enum>Qt::ToolButtonIconOnly</enum>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>29</x>
+      <y>300</y>
+      <width>301</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Çıkış</string>
+    </property>
+    <property name="icon">
+     <iconset resource="Kaynaklar.qrc">
+      <normaloff>:/Resimler/Resimler/exit.png</normaloff>:/Resimler/Resimler/exit.png</iconset>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>29</x>
+      <y>40</y>
+      <width>301</width>
+      <height>231</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Veri Bilgileri Girildiği Bölüm</string>
+    </property>
+    <widget class="QToolButton" name="tbIsletmeBilgisi">
+     <property name="geometry">
+      <rect>
+       <x>13</x>
+       <y>32</y>
+       <width>261</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>İşletme Bilgisi</string>
+     </property>
+     <property name="toolButtonStyle">
+      <enum>Qt::ToolButtonTextBesideIcon</enum>
+     </property>
+    </widget>
+    <widget class="QToolButton" name="tbSeyahatBilgisi">
+     <property name="geometry">
+      <rect>
+       <x>13</x>
+       <y>156</y>
+       <width>261</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Seyahat Bilgisi</string>
+     </property>
+     <property name="toolButtonStyle">
+      <enum>Qt::ToolButtonTextBesideIcon</enum>
+     </property>
+    </widget>
+    <widget class="QToolButton" name="tbSoforBilgisi">
+     <property name="geometry">
+      <rect>
+       <x>13</x>
+       <y>187</y>
+       <width>261</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Şoför Bilgisi</string>
+     </property>
+     <property name="toolButtonStyle">
+      <enum>Qt::ToolButtonTextBesideIcon</enum>
+     </property>
+    </widget>
+    <widget class="QToolButton" name="tbOtobusBilgisi">
+     <property name="geometry">
+      <rect>
+       <x>13</x>
+       <y>63</y>
+       <width>261</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Otobus Bilgisi</string>
+     </property>
+     <property name="toolButtonStyle">
+      <enum>Qt::ToolButtonTextBesideIcon</enum>
+     </property>
+    </widget>
+    <widget class="QToolButton" name="tbYolcuBilgisi">
+     <property name="geometry">
+      <rect>
+       <x>13</x>
+       <y>125</y>
+       <width>261</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Yolcu Bilgisi</string>
+     </property>
+     <property name="toolButtonStyle">
+      <enum>Qt::ToolButtonTextBesideIcon</enum>
+     </property>
+    </widget>
+    <widget class="QToolButton" name="tbSeferBilgisi">
+     <property name="geometry">
+      <rect>
+       <x>13</x>
+       <y>94</y>
+       <width>261</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Sefer Bilgisi</string>
+     </property>
+     <property name="toolButtonStyle">
+      <enum>Qt::ToolButtonTextBesideIcon</enum>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_2">
+    <property name="geometry">
+     <rect>
+      <x>380</x>
+      <y>40</y>
+      <width>301</width>
+      <height>231</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Veri Bilgilerinin Listesi</string>
+    </property>
+    <widget class="QToolButton" name="tbYolcuListesi">
+     <property name="geometry">
+      <rect>
+       <x>11</x>
+       <y>124</y>
+       <width>281</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Yolcu Listesi</string>
+     </property>
+     <property name="toolButtonStyle">
+      <enum>Qt::ToolButtonTextBesideIcon</enum>
+     </property>
+    </widget>
+    <widget class="QToolButton" name="tbIsletmeListesi">
+     <property name="geometry">
+      <rect>
+       <x>11</x>
+       <y>31</y>
+       <width>281</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>İşletme Listesi</string>
+     </property>
+     <property name="toolButtonStyle">
+      <enum>Qt::ToolButtonTextBesideIcon</enum>
+     </property>
+    </widget>
+    <widget class="QToolButton" name="tbOtobusListesi">
+     <property name="geometry">
+      <rect>
+       <x>11</x>
+       <y>62</y>
+       <width>281</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Otobus Listesi</string>
+     </property>
+     <property name="toolButtonStyle">
+      <enum>Qt::ToolButtonTextBesideIcon</enum>
+     </property>
+    </widget>
+    <widget class="QToolButton" name="tbSeferListesi">
+     <property name="geometry">
+      <rect>
+       <x>11</x>
+       <y>93</y>
+       <width>281</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Sefer Listesi</string>
+     </property>
+     <property name="toolButtonStyle">
+      <enum>Qt::ToolButtonTextBesideIcon</enum>
+     </property>
+    </widget>
+    <widget class="QToolButton" name="tbSoforListesi">
+     <property name="geometry">
+      <rect>
+       <x>11</x>
+       <y>186</y>
+       <width>281</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Şoför Listesi</string>
+     </property>
+     <property name="toolButtonStyle">
+      <enum>Qt::ToolButtonTextBesideIcon</enum>
+     </property>
+    </widget>
+    <widget class="QToolButton" name="tbSeayahatListesi">
+     <property name="geometry">
+      <rect>
+       <x>11</x>
+       <y>155</y>
+       <width>281</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Seyahat Listesi</string>
+     </property>
+     <property name="toolButtonStyle">
+      <enum>Qt::ToolButtonTextBesideIcon</enum>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="pushButton_2">
+    <property name="geometry">
+     <rect>
+      <x>380</x>
+      <y>300</y>
+      <width>301</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Ayarlar(Güncelleme İle Gelecek)</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>721</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_letme_Bilgisi">
+    <property name="title">
+     <string>İşletme </string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuOtob_s">
+    <property name="title">
+     <string>Otobüs</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuSefer">
+    <property name="title">
+     <string>Sefer</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuYolcu">
+    <property name="title">
+     <string>Yolcu</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuSeyahat">
+    <property name="title">
+     <string>Seyahat</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menu_of_r">
+    <property name="title">
+     <string>Şoför</string>
+    </property>
+   </widget>
+   <addaction name="menu_letme_Bilgisi"/>
+   <addaction name="menuOtob_s"/>
+   <addaction name="menuSefer"/>
+   <addaction name="menuYolcu"/>
+   <addaction name="menuSeyahat"/>
+   <addaction name="menu_of_r"/>
+  </widget>
+  <widget class="QToolBar" name="tbMenu">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <action name="action_letme_Sistemi">
+   <property name="text">
+    <string>İşletme Bilgisi</string>
+   </property>
+  </action>
+  <action name="action_letme_Sistemi_2">
+   <property name="text">
+    <string>İşletme Sistemi</string>
+   </property>
+  </action>
+  <action name="actionOtob_s_Bilgisi">
+   <property name="text">
+    <string>Otobüs Bilgisi</string>
+   </property>
+  </action>
+  <action name="actionOtob_s_Listesi">
+   <property name="text">
+    <string>Otobüs Listesi</string>
+   </property>
+  </action>
+  <action name="actionSefer_Bilgisi">
+   <property name="text">
+    <string>Sefer Bilgisi</string>
+   </property>
+  </action>
+  <action name="actionSefer_Listesi">
+   <property name="text">
+    <string>Sefer Listesi</string>
+   </property>
+  </action>
+  <action name="actionYolcu_Bilgisi">
+   <property name="text">
+    <string>Yolcu Bilgisi</string>
+   </property>
+  </action>
+  <action name="actionYolcu_Listesi">
+   <property name="text">
+    <string>Yolcu Listesi</string>
+   </property>
+  </action>
+  <action name="actionSeyhat_Bilgisi">
+   <property name="text">
+    <string>Seyhat Bilgisi</string>
+   </property>
+  </action>
+  <action name="actionSeyahat_Listesi">
+   <property name="text">
+    <string>Seyahat Listesi</string>
+   </property>
+  </action>
+  <action name="action_of_r_Bilgisi">
+   <property name="text">
+    <string>Şoför Bilgisi</string>
+   </property>
+  </action>
+  <action name="action_of_r_Listesi">
+   <property name="text">
+    <string>Şoför Listesi</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="Kaynaklar.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>OSOtobusSistemleri</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>663</x>
+     <y>533</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>319</x>
+     <y>285</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

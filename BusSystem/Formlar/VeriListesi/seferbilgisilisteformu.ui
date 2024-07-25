@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SeferBilgisiListeFormu</class>
+ <widget class="QWidget" name="SeferBilgisiListeFormu">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>523</width>
+    <height>454</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Sefer Sistemi</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="../../Kaynaklar.qrc">
+    <normaloff>:/Resimler/Resimler/sefer.png</normaloff>:/Resimler/Resimler/sefer.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(255, 255, 255);</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="1">
+    <widget class="QGroupBox" name="grpAramaturu">
+     <property name="title">
+      <string>Arama Türü</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QRadioButton" name="rbIleBaslayan">
+        <property name="text">
+         <string>İle Başlayan</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="rbIleBiten">
+        <property name="text">
+         <string>İle Biten</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="rbIceren">
+        <property name="text">
+         <string>İçeren</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="2" column="3">
+    <spacer name="verticalSpacer">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>40</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="0" column="0">
+    <widget class="QGroupBox" name="grpAlanSecimi">
+     <property name="title">
+      <string>Alan Seçimi</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <widget class="QRadioButton" name="rbBaslangicSaati">
+        <property name="text">
+         <string>Başlangıç Saati</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="rbBitisSaati">
+        <property name="text">
+         <string>Bitiş Saati</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="rbSeferNo">
+        <property name="text">
+         <string>Sefer No</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="rbHatlar">
+        <property name="text">
+         <string>Hatlar</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="rbTarife">
+        <property name="text">
+         <string>Tarife</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="rbSeferKodu">
+        <property name="text">
+         <string>Sefer Kodu</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="rbTumu">
+        <property name="text">
+         <string>Tümü</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="1" column="0" colspan="4">
+    <widget class="QTableWidget" name="tblSeferBilgisiListesi"/>
+   </item>
+   <item row="0" column="2">
+    <widget class="QGroupBox" name="grpAramaMetni">
+     <property name="title">
+      <string>Arama Metni</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_2">
+      <item row="0" column="0">
+       <layout class="QVBoxLayout" name="verticalLayout_3">
+        <item>
+         <widget class="QLineEdit" name="leArama"/>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pbArama">
+          <property name="text">
+           <string>Ara</string>
+          </property>
+          <property name="icon">
+           <iconset resource="../../Kaynaklar.qrc">
+            <normaloff>:/Resimler/Resimler/buyutec.png</normaloff>:/Resimler/Resimler/buyutec.png</iconset>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <tabstops>
+  <tabstop>rbBitisSaati</tabstop>
+  <tabstop>rbSeferNo</tabstop>
+  <tabstop>rbSeferKodu</tabstop>
+  <tabstop>rbHatlar</tabstop>
+  <tabstop>leArama</tabstop>
+  <tabstop>pbArama</tabstop>
+  <tabstop>tblSeferBilgisiListesi</tabstop>
+ </tabstops>
+ <resources>
+  <include location="../../Kaynaklar.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>leArama</sender>
+   <signal>textChanged(QString)</signal>
+   <receiver>pbArama</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>397</x>
+     <y>231</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>411</x>
+     <y>232</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

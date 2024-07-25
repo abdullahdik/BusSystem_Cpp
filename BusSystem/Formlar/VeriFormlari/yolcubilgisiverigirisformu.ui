@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>yolcubilgisiverigirisformu</class>
+ <widget class="QWidget" name="yolcubilgisiverigirisformu">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>297</width>
+    <height>364</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Yolcu Bilgisi</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="../../Kaynaklar.qrc">
+    <normaloff>:/Resimler/Resimler/yolcu.png</normaloff>:/Resimler/Resimler/yolcu.png</iconset>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_5">
+   <item row="0" column="0">
+    <layout class="QGridLayout" name="gridLayout_3">
+     <item row="0" column="0">
+      <widget class="QLabel" name="lbIcon">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap resource="../../Kaynaklar.qrc">:/Resimler/Resimler/yolcu.png</pixmap>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QLabel" name="lbYolcuBilgisi">
+       <property name="text">
+        <string>Yolcu Bilgisi</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="1" column="0">
+    <layout class="QGridLayout" name="gridLayout_4">
+     <item row="0" column="0">
+      <layout class="QGridLayout" name="gridLayout_2">
+       <item row="6" column="0">
+        <widget class="QLabel" name="lbUyruk">
+         <property name="text">
+          <string>Uyruk</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1">
+        <widget class="QLineEdit" name="leTelefonNo"/>
+       </item>
+       <item row="15" column="0">
+        <spacer name="verticalSpacer_2">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="15" column="1">
+        <spacer name="verticalSpacer_3">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="2" column="1">
+        <widget class="QLineEdit" name="leTCKimlikNo"/>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLineEdit" name="leAdi"/>
+       </item>
+       <item row="6" column="1">
+        <widget class="QLineEdit" name="leUyruk"/>
+       </item>
+       <item row="4" column="1">
+        <widget class="QLineEdit" name="leHESKodu"/>
+       </item>
+       <item row="8" column="1">
+        <widget class="QLineEdit" name="leBiletKodu"/>
+       </item>
+       <item row="14" column="0">
+        <widget class="QLabel" name="lbRezervasyon">
+         <property name="text">
+          <string>Rezervasyon</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0">
+        <widget class="QLabel" name="lbAdi">
+         <property name="text">
+          <string>Adı</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="lbTCKimlik">
+         <property name="text">
+          <string>TCKimlik No</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="0">
+        <widget class="QLabel" name="lbCinsiyeti">
+         <property name="text">
+          <string>Cinsiyeti</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="lbSoyadi">
+         <property name="text">
+          <string>Soyadı</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <widget class="QLabel" name="lbTelefonNo">
+         <property name="text">
+          <string>Telefon No</string>
+         </property>
+        </widget>
+       </item>
+       <item row="8" column="0">
+        <widget class="QLabel" name="lbBiletKodu">
+         <property name="text">
+          <string>Bilet Kodu</string>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="0">
+        <widget class="QLabel" name="lbKoltukNo">
+         <property name="text">
+          <string>Koltuk No</string>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="1">
+        <widget class="QSpinBox" name="spnKoltukNo"/>
+       </item>
+       <item row="1" column="1">
+        <widget class="QLineEdit" name="leSoyadi"/>
+       </item>
+       <item row="14" column="1">
+        <widget class="QDateTimeEdit" name="dteRezervasyon"/>
+       </item>
+       <item row="4" column="0">
+        <widget class="QLabel" name="lbHESKodu">
+         <property name="text">
+          <string>HES Kodu</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="1">
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <item>
+          <widget class="QRadioButton" name="rbKadin">
+           <property name="text">
+            <string>Kadın</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QRadioButton" name="rbErkek">
+           <property name="text">
+            <string>Erkek</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </item>
+     <item row="0" column="1">
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="1" column="0">
+        <widget class="QPushButton" name="pbIptal">
+         <property name="text">
+          <string>İptal</string>
+         </property>
+         <property name="icon">
+          <iconset resource="../../Kaynaklar.qrc">
+           <normaloff>:/Resimler/Resimler/iptal.png</normaloff>:/Resimler/Resimler/iptal.png</iconset>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0">
+        <widget class="QPushButton" name="pbKaydet">
+         <property name="text">
+          <string>Kaydet</string>
+         </property>
+         <property name="icon">
+          <iconset resource="../../Kaynaklar.qrc">
+           <normaloff>:/Resimler/Resimler/kaydet.png</normaloff>:/Resimler/Resimler/kaydet.png</iconset>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <spacer name="verticalSpacer">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <tabstops>
+  <tabstop>leAdi</tabstop>
+  <tabstop>leSoyadi</tabstop>
+  <tabstop>leTCKimlikNo</tabstop>
+  <tabstop>leTelefonNo</tabstop>
+  <tabstop>leHESKodu</tabstop>
+  <tabstop>rbKadin</tabstop>
+  <tabstop>rbErkek</tabstop>
+  <tabstop>leUyruk</tabstop>
+  <tabstop>spnKoltukNo</tabstop>
+  <tabstop>leBiletKodu</tabstop>
+  <tabstop>dteRezervasyon</tabstop>
+  <tabstop>pbKaydet</tabstop>
+  <tabstop>pbIptal</tabstop>
+ </tabstops>
+ <resources>
+  <include location="../../Kaynaklar.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>pbIptal</sender>
+   <signal>clicked()</signal>
+   <receiver>yolcubilgisiverigirisformu</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>274</x>
+     <y>94</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>310</x>
+     <y>204</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
